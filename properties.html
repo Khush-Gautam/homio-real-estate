@@ -1,45 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Properties | Homio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Properties — Homio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">Homio</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="properties.html">Properties</a></li>
-      <li><a href="agents.html">Agents</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="container navbar">
+      <div class="logo"><span class="mark">H</span> Homio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="properties.html" class="active">Properties</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-  <section class="properties">
-    <div class="property-card">
-      <img src="https://via.placeholder.com/400x200" alt="">
-      <h3>City Apartment</h3>
-      <p>2 BHK • ₹40L • <a href="property-details.html" style="color:#f1c40f;">View Details</a></p>
+  <main class="container" style="padding:28px 0 60px;">
+    <div class="section-title">
+      <h3>Available Properties</h3>
+      <div style="color:var(--muted)">Filter, view and explore</div>
     </div>
-    <div class="property-card">
-      <img src="https://via.placeholder.com/400x200" alt="">
-      <h3>Luxury Villa</h3>
-      <p>4 BHK • ₹1.2Cr • <a href="property-details.html" style="color:#f1c40f;">View Details</a></p>
-    </div>
-    <div class="property-card">
-      <img src="https://via.placeholder.com/400x200" alt="">
-      <h3>Lake View House</h3>
-      <p>3 BHK • ₹75L • <a href="property-details.html" style="color:#f1c40f;">View Details</a></p>
-    </div>
-  </section>
 
-  <footer>
-    © 2025 Homio. All rights reserved.
+    <div style="margin-bottom:16px;">
+      <div class="search-like" style="max-width:760px;margin:auto;">
+        <input placeholder="Search by city, price, or features" />
+        <a class="btn" href="#">Filter</a>
+      </div>
+    </div>
+
+    <div class="property-grid" style="margin-top:18px;">
+      <article class="property-card fade-in">
+        <div class="property-media">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="apt" />
+          <div class="price-badge">₹65L</div>
+        </div>
+        <div class="property-body">
+          <h3>Urban Apartment</h3>
+          <p>2 BHK · Bangalore · 850 ft²</p>
+          <div class="property-meta">
+            <span class="meta-pill">2 beds</span>
+            <span class="meta-pill">1 bath</span>
+            <a class="btn secondary" href="property-details.html">View</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="property-card fade-in">
+        <div class="property-media">
+          <img src="https://images.unsplash.com/photo-1572120360610-d971b9c7986e?auto=format&fit=crop&w=1200&q=80" alt="villa" />
+          <div class="price-badge">₹2.5Cr</div>
+        </div>
+        <div class="property-body">
+          <h3>Luxury Villa</h3>
+          <p>5 BHK · Mumbai · 4,200 ft²</p>
+          <div class="property-meta">
+            <span class="meta-pill">Pool</span>
+            <span class="meta-pill">Garden</span>
+            <a class="btn secondary" href="property-details.html">View</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="property-card fade-in">
+        <div class="property-media">
+          <img src="https://images.unsplash.com/photo-1560185127-6ed189bf04bb?auto=format&fit=crop&w=1200&q=80" alt="home" />
+          <div class="price-badge">₹85L</div>
+        </div>
+        <div class="property-body">
+          <h3>Modern Family Home</h3>
+          <p>3 BHK · Delhi · 1,650 ft²</p>
+          <div class="property-meta">
+            <span class="meta-pill">Garage</span>
+            <span class="meta-pill">Balcony</span>
+            <a class="btn secondary" href="property-details.html">View</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Homio • All properties are illustrative</div>
   </footer>
 </body>
 </html>
