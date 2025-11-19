@@ -1,73 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homio - Real Homes, Real People</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Homio — Real Homes, Real People</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Navbar -->
+
   <header>
-    <div class="navbar">
-      <h1 class="logo">Homio</h1>
+    <div class="container navbar">
+      <div class="logo"><span class="mark">H</span> Homio</div>
+
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="properties.html">Properties</a></li>
         <li><a href="agents.html">Agents</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h2>Find Your Perfect Home</h2>
-      <p>Discover beautiful properties that fit your dreams and budget.</p>
-      <a href="properties.html" class="btn">Browse Listings</a>
-    </div>
-  </section>
+  <main class="container">
+    <section class="hero fade-in">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <h1>Find your perfect home — fast.</h1>
+          <p>Discover verified listings with beautiful photos, transparent pricing and trusted agents near you.</p>
 
-  <!-- About Section -->
-  <section class="about">
-    <div class="about-content">
-      <h2>Welcome to Homio</h2>
-      <p>Homio helps you find your ideal home — from modern apartments to luxurious villas. Our trusted network and simple interface make finding a new place effortless.</p>
-    </div>
-  </section>
+          <div class="search-like" aria-hidden="true">
+            <input type="text" placeholder="Search city, locality or landmark (e.g., Mumbai, Bandra)" />
+            <a class="btn" href="properties.html">Search</a>
+          </div>
 
-  <!-- Featured Properties -->
-  <section class="properties">
-    <h2>Featured Properties</h2>
-    <div class="property-grid">
-      <div class="property-card">
-        <img src="https://images.unsplash.com/photo-1560185127-6ed189bf04bb" alt="Home 1">
-        <h3>Modern Family Home</h3>
-        <p>3 BHK · Delhi</p>
-        <span class="price">₹85,00,000</span>
+          <div class="hero-cta">
+            <a class="btn" href="properties.html">Browse Listings</a>
+            <a class="btn secondary" href="services.html">How it works</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80" alt="Beautiful home" />
+        </div>
       </div>
-      <div class="property-card">
-        <img src="https://images.unsplash.com/photo-1572120360610-d971b9c7986e" alt="Home 2">
-        <h3>Luxury Villa</h3>
-        <p>5 BHK · Mumbai</p>
-        <span class="price">₹2.5 Cr</span>
+    </section>
+
+    <section class="properties">
+      <div class="section-title">
+        <h3>Featured Properties</h3>
+        <a class="btn secondary" href="properties.html">View all</a>
       </div>
-      <div class="property-card">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Home 3">
-        <h3>Urban Apartment</h3>
-        <p>2 BHK · Bangalore</p>
-        <span class="price">₹65,00,000</span>
+
+      <div class="property-grid">
+        <article class="property-card fade-in">
+          <div class="property-media">
+            <img src="https://images.unsplash.com/photo-1560185127-6ed189bf04bb?auto=format&fit=crop&w=1200&q=80" alt="modern home" />
+            <div class="price-badge">₹85L</div>
+          </div>
+          <div class="property-body">
+            <h3>Modern Family Home</h3>
+            <p>3 BHK · Delhi · 1,650 ft²</p>
+            <div class="property-meta">
+              <span class="meta-pill">Pool</span>
+              <span class="meta-pill">Garden</span>
+              <a class="btn secondary" href="property-details.html">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="property-card fade-in">
+          <div class="property-media">
+            <img src="https://images.unsplash.com/photo-1572120360610-d971b9c7986e?auto=format&fit=crop&w=1200&q=80" alt="villa" />
+            <div class="price-badge">₹2.5Cr</div>
+          </div>
+          <div class="property-body">
+            <h3>Luxury Villa</h3>
+            <p>5 BHK · Mumbai · 4,200 ft²</p>
+            <div class="property-meta">
+              <span class="meta-pill">Sea View</span>
+              <span class="meta-pill">Garage</span>
+              <a class="btn secondary" href="property-details.html">Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="property-card fade-in">
+          <div class="property-media">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="apartment" />
+            <div class="price-badge">₹65L</div>
+          </div>
+          <div class="property-body">
+            <h3>Urban Apartment</h3>
+            <p>2 BHK · Bangalore · 850 ft²</p>
+            <div class="property-meta">
+              <span class="meta-pill">City View</span>
+              <span class="meta-pill">Gym</span>
+              <a class="btn secondary" href="property-details.html">Details</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section style="padding-bottom:40px;">
+      <div class="section-title">
+        <h3>Why Homio?</h3>
+        <div style="color:var(--muted)">Trusted listings • Verified agents • Simple process</div>
+      </div>
+
+      <div class="content-block" style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;">
+        <div style="padding:18px;">
+          <h4 style="color:var(--primary-a)">Verified Listings</h4>
+          <p style="color:var(--muted)">Every property is verified by our local team before being listed.</p>
+        </div>
+        <div style="padding:18px;">
+          <h4 style="color:var(--primary-a)">Transparent Pricing</h4>
+          <p style="color:var(--muted)">Clear price breakdowns and no surprise fees.</p>
+        </div>
+        <div style="padding:18px;">
+          <h4 style="color:var(--primary-a)">Support</h4>
+          <p style="color:var(--muted)">From visit scheduling to paperwork, our agents help you end-to-end.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div style="color:white;font-weight:700">© 2025 Homio</div>
+        <div style="color:rgba(255,255,255,0.9)">Real Homes, Real People — Built with ❤️</div>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Homio. Real Homes, Real People.</p>
   </footer>
+
 </body>
 </html>
