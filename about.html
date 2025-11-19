@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Homio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Homio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">Homio</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="properties.html">Properties</a></li>
-      <li><a href="agents.html">Agents</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="container navbar">
+      <div class="logo"><span class="mark">H</span> Homio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-  <section style="padding:50px; text-align:center;">
-    <h1 style="color:#f1c40f;">About Homio</h1>
-    <p style="max-width:800px; margin:auto; color:#ccc; margin-top:20px;">
-      Homio is a modern real estate platform dedicated to helping people find their dream homes.
-      We offer luxury, comfort, and convenience — all at your fingertips.
-      With a trusted network of agents and a wide selection of properties, Homio ensures a smooth home-buying journey.
-    </p>
-  </section>
+  <main class="container" style="padding:36px 0;">
+    <div class="section-title">
+      <h3>About Homio</h3>
+      <div style="color:var(--muted)">Our mission & story</div>
+    </div>
 
-  <footer>
-    © 2025 Homio. All rights reserved.
+    <div style="display:grid;grid-template-columns:1fr 420px;gap:22px;align-items:center">
+      <div>
+        <div class="content-block">
+          <h2 style="color:var(--primary-a)">Real homes, real people.</h2>
+          <p style="color:var(--muted);margin-top:10px;">Homio started with a simple idea: make property searching fast, transparent and beautiful. We combine local expertise with modern UX so that you can find places you’ll love — without the hassle.</p>
+          <ul style="margin-top:12px;color:var(--muted);line-height:1.7;">
+            <li><strong>Verified listings</strong> — local verification team checks each listing.</li>
+            <li><strong>Trusted agents</strong> — only experienced agents work with Homio.</li>
+            <li><strong>Customer-first</strong> — we assist you at every step of buying or renting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside>
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1000&q=80" alt="About Homio">
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Homio • Made with care</div>
   </footer>
 </body>
 </html>
