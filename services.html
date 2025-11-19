@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | Homio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Homio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">Homio</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="properties.html">Properties</a></li>
-      <li><a href="agents.html">Agents</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="container navbar">
+      <div class="logo"><span class="mark">H</span> Homio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-  <section style="padding:50px; text-align:center;">
-    <h1 style="color:#f1c40f;">Our Services</h1>
-    <p style="max-width:800px; margin:auto; color:#ccc; margin-top:20px;">
-      We provide property buying, selling, renting, and investment consultancy.
-      Homio also helps in property valuation, legal paperwork, and home loans.
-    </p>
-  </section>
+  <main class="container" style="padding:36px 0;">
+    <div class="section-title">
+      <h3>Our Services</h3>
+      <div style="color:var(--muted)">How we help</div>
+    </div>
 
-  <footer>
-    © 2025 Homio. All rights reserved.
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+      <div class="content-block">
+        <h4 style="color:var(--primary-a)">Buy & Sell</h4>
+        <p style="color:var(--muted)">We assist with every step — from search to closing.</p>
+      </div>
+      <div class="content-block">
+        <h4 style="color:var(--primary-a)">Rentals</h4>
+        <p style="color:var(--muted)">Short and long-term rental listings with trusted agents.</p>
+      </div>
+      <div class="content-block">
+        <h4 style="color:var(--primary-a)">Consulting</h4>
+        <p style="color:var(--muted)">Investment guidance, valuations and legal assistance.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Homio • Services</div>
   </footer>
 </body>
 </html>
