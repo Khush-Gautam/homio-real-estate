@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ | Homio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ — Homio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">Homio</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="properties.html">Properties</a></li>
-      <li><a href="agents.html">Agents</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="container navbar">
+      <div class="logo"><span class="mark">H</span> Homio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-  <section style="padding:50px; max-width:800px; margin:auto;">
-    <h1 style="color:#f1c40f;">Frequently Asked Questions</h1>
-    <p><strong>Q:</strong> How can I book a property?<br><strong>A:</strong> Just contact our agents or visit the property details page.</p>
-    <p><strong>Q:</strong> Do you offer rental homes?<br><strong>A:</strong> Yes, we have a wide variety of rental properties.</p>
-    <p><strong>Q:</strong> Is Homio available in all cities?<br><strong>A:</strong> Currently we operate in 10+ major Indian cities.</p>
-  </section>
+  <main class="container" style="padding:32px 0;">
+    <div class="section-title">
+      <h3>Frequently Asked Questions</h3>
+      <div style="color:var(--muted)">Quick answers to common questions</div>
+    </div>
 
-  <footer>
-    © 2025 Homio. All rights reserved.
+    <div class="content-block">
+      <h4>How can I book a property?</h4>
+      <p style="color:var(--muted)">You can contact the agent listed on the property or use the 'Request Visit' form on the property details page.</p>
+
+      <h4 style="margin-top:12px">Do you offer rental homes?</h4>
+      <p style="color:var(--muted)">Yes — browse the Properties page and filter for rentals.</p>
+
+      <h4 style="margin-top:12px">Is Homio available in my city?</h4>
+      <p style="color:var(--muted)">We operate in many major cities. If your city isn’t listed, contact us and we'll try to help.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Homio • FAQ</div>
   </footer>
 </body>
 </html>
