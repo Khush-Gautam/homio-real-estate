@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agents | Homio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agents — Homio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">Homio</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="properties.html">Properties</a></li>
-      <li><a href="agents.html">Agents</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="container navbar">
+      <div class="logo"><span class="mark">H</span> Homio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="agents.html" class="active">Agents</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-  <section class="properties">
-    <div class="property-card">
-      <img src="https://via.placeholder.com/400x200" alt="">
-      <h3>Rohit Sharma</h3>
-      <p>Senior Agent • 10 Years Experience</p>
+  <main class="container" style="padding:30px 0;">
+    <div class="section-title">
+      <h3>Our Agents</h3>
+      <div style="color:var(--muted)">Trusted & experienced</div>
     </div>
-    <div class="property-card">
-      <img src="https://via.placeholder.com/400x200" alt="">
-      <h3>Priya Mehta</h3>
-      <p>Luxury Homes Specialist</p>
-    </div>
-    <div class="property-card">
-      <img src="https://via.placeholder.com/400x200" alt="">
-      <h3>Amit Verma</h3>
-      <p>Commercial Property Expert</p>
-    </div>
-  </section>
 
-  <footer>
-    © 2025 Homio. All rights reserved.
+    <div class="card-row">
+      <div class="agent-card">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=60" alt="Rohit">
+        <h4>Rohit Sharma</h4>
+        <p style="color:var(--muted)">Senior Agent • 10 yrs</p>
+      </div>
+
+      <div class="agent-card">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=60" alt="Priya">
+        <h4>Priya Mehta</h4>
+        <p style="color:var(--muted)">Luxury Homes</p>
+      </div>
+
+      <div class="agent-card">
+        <img src="https://images.unsplash.com/photo-1545996124-7a5f5f9ef6d9?auto=format&fit=crop&w=800&q=60" alt="Amit">
+        <h4>Amit Verma</h4>
+        <p style="color:var(--muted)">Commercial</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Homio • Agents</div>
   </footer>
 </body>
 </html>
