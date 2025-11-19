@@ -1,36 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Property Details | Homio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Property Details — Homio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">Homio</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="properties.html">Properties</a></li>
-      <li><a href="agents.html">Agents</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="container navbar">
+      <div class="logo"><span class="mark">H</span> Homio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="properties.html" class="active">Properties</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-  <section style="padding:50px; text-align:center;">
-    <h1 style="color:#f1c40f;">Luxury Villa</h1>
-    <img src="https://via.placeholder.com/800x400" alt="Property" style="width:80%; margin:20px auto; border-radius:10px;">
-    <p style="max-width:800px; margin:auto; color:#ccc;">
-      Located in the heart of the city, this luxury villa offers 4 bedrooms, 3 bathrooms, a private pool, and a spacious garden.
-      Perfect for families looking for comfort and privacy.
-    </p>
-  </section>
+  <main class="container" style="padding:30px 0 60px;">
+    <div class="section-title">
+      <h3>Luxury Villa</h3>
+      <div style="color:var(--muted)">4 BHK · Goa · ₹1.8Cr</div>
+    </div>
 
-  <footer>
-    © 2025 Homio. All rights reserved.
+    <div style="display:grid;grid-template-columns:1fr 380px;gap:20px;">
+      <div style="background:var(--card);padding:14px;border-radius:12px;box-shadow:var(--shadow);">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1400&q=80" alt="villa" style="width:100%;height:360px;object-fit:cover;border-radius:8px;margin-bottom:12px;">
+        <h4 style="color:var(--primary-a)">Overview</h4>
+        <p style="color:var(--muted);line-height:1.6">This luxurious villa offers a private pool, sea-facing terrace, high-ceiling living area and landscaped garden. Modern fittings and premium finishes throughout.</p>
+
+        <h4 style="margin-top:12px;color:var(--primary-a)">Features</h4>
+        <ul style="color:var(--muted);line-height:1.7">
+          <li>Private Pool • Home Theatre • Modular Kitchen</li>
+          <li>4 Bedrooms • 3 Bathrooms • 2 Car Garage</li>
+          <li>Easy access to beaches and local amenities</li>
+        </ul>
+      </div>
+
+      <aside>
+        <div class="content-block">
+          <h4 style="color:#092033">Price</h4>
+          <div style="font-size:1.4rem;color:var(--accent);font-weight:800;margin:8px 0">₹1.8 Cr</div>
+          <a class="btn" href="contact.html">Contact Agent</a>
+
+          <div style="margin-top:16px">
+            <h4 style="color:#092033">Agent</h4>
+            <div style="display:flex;gap:12px;align-items:center;margin-top:10px">
+              <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=200&q=60" alt="agent" style="width:64px;height:64px;border-radius:10px;object-fit:cover;">
+              <div>
+                <div style="font-weight:700">Rohit Sharma</div>
+                <div style="color:var(--muted);font-size:0.95rem">Senior Agent • 10 yrs</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px">
+            <h4 style="color:#092033">Schedule Visit</h4>
+            <div class="form-grid">
+              <input type="text" placeholder="Your name" />
+              <input type="email" placeholder="Email" />
+              <input type="text" placeholder="Preferred date & time" />
+              <button class="btn-submit">Request Visit</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Homio • Property details</div>
   </footer>
 </body>
 </html>
