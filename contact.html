@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Homio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Homio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-    <div class="logo">Homio</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="properties.html">Properties</a></li>
-      <li><a href="agents.html">Agents</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="container navbar">
+      <div class="logo"><span class="mark">H</span> Homio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-  <section style="padding:50px; text-align:center;">
-    <h1 style="color:#f1c40f;">Contact Us</h1>
-    <p style="color:#ccc;">Have questions? Reach out to us below.</p>
+  <main class="container" style="padding:36px 0;">
+    <div class="section-title">
+      <h3>Contact Us</h3>
+      <div style="color:var(--muted)">We'd love to hear from you</div>
+    </div>
 
-    <form style="max-width:500px; margin:30px auto; display:flex; flex-direction:column; gap:15px;">
-      <input type="text" placeholder="Your Name" style="padding:10px;">
-      <input type="email" placeholder="Your Email" style="padding:10px;">
-      <textarea placeholder="Your Message" rows="5" style="padding:10px;"></textarea>
-      <button type="submit" style="padding:10px; background-color:#f1c40f; border:none; cursor:pointer;">Send Message</button>
-    </form>
-  </section>
+    <div style="display:grid;grid-template-columns:1fr 420px;gap:20px;align-items:start">
+      <div class="content-block">
+        <h4 style="color:var(--primary-a)">Send a message</h4>
+        <form class="form-grid" action="#" method="post" onsubmit="return false;">
+          <input type="text" placeholder="Full name" required/>
+          <input type="email" placeholder="Email address" required/>
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Message"></textarea>
+          <button class="btn-submit">Send message</button>
+        </form>
+      </div>
 
-  <footer>
-    © 2025 Homio. All rights reserved.
+      <aside>
+        <div class="content-block">
+          <h4 style="color:var(--primary-a)">Get in touch</h4>
+          <p style="color:var(--muted);">Email: hello@homio.example<br/>Phone: +91 98765 43210<br/>Address: 42 Homio St, City</p>
+          <div style="margin-top:16px">
+            <h4 style="color:#092033">Office Hours</h4>
+            <p style="color:var(--muted)">Mon - Sat: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Homio • We'll reply within 1 business day</div>
   </footer>
 </body>
 </html>
